@@ -1,0 +1,17 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-Cors
+APScheduler
+pytz
+python-dotenv
+vnstock
+pandas
+Flask-WTF
+email-validator
+psycopg2
+pysqlite3-binary ; sys_platform == 'linux'
+sendgrid==6.11.0
+beautifulsoup4
+playwright
+gunicorn

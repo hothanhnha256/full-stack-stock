@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: stock-report-backend
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      playwright install --with-deps chromium
+    startCommand: gunicorn --bind 0.0.0.0:$PORT run:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: ENABLE_SCHEDULER
+        value: 1
+      - key: DATABASE_URL
+        sync: false
+      - key: SENDGRID_API_KEY
+        sync: false
+      - key: SENDER_EMAIL
+        sync: false
+      - key: RECIPIENT_EMAIL
+        sync: false
+      - key: SECRET_KEY
+        sync: false

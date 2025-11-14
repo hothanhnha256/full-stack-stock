@@ -1,0 +1,65 @@
+# Environment files
+.env
+.env.local
+.env.production.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+instance/
+
+# Flask
+.webassets-cache
+
+# Database
+*.db
+*.sqlite3
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Playwright
+playwright/.cache/
+.playwright/
+
+# Testing
+coverage/
+.pytest_cache/
+.coverage
+
+# Misc
+*.bak
+*.tmp
+.cache/
