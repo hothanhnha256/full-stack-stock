@@ -106,8 +106,7 @@ def index_change_str(stock, symbol: str, today_query: str) -> str:
 def send_report():
     app = current_app._get_current_object()
     cfg = app.config
-    # Vnstock v3.3.0 yêu cầu symbol, dùng symbol mặc định để khởi tạo
-    stock = Vnstock().stock(symbol='VNM', source='VCI')
+    stock = Vnstock().stock()
 
     print("🔔 Chuẩn bị gửi báo cáo...")
     syms = StockSymbol.query.all()
