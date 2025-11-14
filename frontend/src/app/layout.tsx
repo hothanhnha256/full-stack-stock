@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Stock Report Manager - VNStock  ",
+  title: "Stock Report Manager - VNStock",
   description: "Quản lý danh sách mã chứng khoán và gửi báo cáo tự động",
 };
 
